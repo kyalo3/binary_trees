@@ -1,6 +1,110 @@
-0x1D. C - Binary trees
+# 0x1D. C - Binary trees
 
 C
 Group project
 Algorithm
-Data structure
+
+## Helper File :radioactive:
+
+* [binary_tree_print.c](./binary_tree_print.c): C function that prints binary
+trees in a pretty way.
+
+## Header File :file_folder:
+
+* [binary_trees.h](./binary_trees.h): Header file containing definitions and
+prototypes for all types and functions written for the project.
+
+Data Structures
+```
+struct binary_tree_s
+{
+    int n;
+    struct binary_tree_s *parent;
+    struct binary_tree_s *left;
+    struct binary_tree_s *right;
+};
+
+typedef struct binary_tree_s binary_tree_t;
+typedef struct binary_tree_s bst_t;
+typedef struct binary_tree_s avl_t;
+typedef struct binary_tree_s heap_t;
+```
+
+Function Prototypes
+
+| File                             | Prototype                                                                                        |
+| -------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `binary_tree_print.c`            | `void binary_tree_print(const binary_tree_t *tree)`                                              |
+| `0-binary_tree_node.c`           | `binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);`                             |
+| `1-binary_tree_insert_left.c`    | `binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);`                      |
+| `2-binary_tree_insert_right.c`   | `binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);`                     |
+| `3-binary_tree_delete.c`         | `void binary_tree_delete(binary_tree_t *tree);`                                                  |
+| `4-binary_tree_is_leaf.c`        | `int binary_tree_is_leaf(const binary_tree_t *node);`                                            |
+| `5-binary_tree_is_root.c`        | `int binary_tree_is_root(const binary_tree_t *node);`                                            |
+| `6-binary_tree_preorder.c`       | `void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));`                       |
+| `7-binary_tree_inorder.c`        | `void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));`                        |
+| `8-binary_tree_postorder.c`      | `void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));`                      |
+| `9-binary_tree_height.c`         | `size_t binary_tree_height(const binary_tree_t *tree);`  
+
+
+## Tasks :page_with_curl:
+
+* **0. New node**
+  * [0-binary_tree_node.c](./0-binary_tree_node.c): C function that creates a
+  binary tree node with a given parent and value.
+  * Returns a pointer to the new node, or `NULL` on failure.
+
+* **1. Insert left**
+  * [1-binary_tree_insert](./1-binary_tree_insert): C function that inserts a
+  node as the left-child of another.
+  * Returns a pointer to the new node, or `NULL` on failure.
+  * If the given `parent` already contains a left node, the new node takes its
+  place and the old left-child becomes the left-child of the new node.
+
+* **2. Insert right**
+  * [2-binary_tree_insert_right.c](./2-binary_tree_insert_right.c): C function that
+  inserts a node as the right-child of another.
+  * Returns a pointer to the new node, or `NULL` on failure.
+  * If the given `parent` already contains a right node, the new node takes its
+  place and the old right-child becomes the right-child of the new node.
+
+* **3. Delete**
+  * [3-binary_tree_delete.c](./3-binary_tree_delete.c): C function that deletes
+  an entire binary tree.
+
+* **4. Is leaf**
+  * [4-binary_tree_is_leaf.c]
+
+* **5. Is root**
+  * [5-binary_tree_is_root.c](./5-binary_tree_is_root.c): C function that checks
+  if a given node is a root.
+  * Returns `1` if the node is a root, `0` otherwise.
+
+* **6. Pre-order traversal**
+  * [6-binary_tree_preorder.c]
+
+* **7. In-order traversal**
+  * [7-binary_tree_inorder.c](./7-binary_tree_inorder.c): C function that
+  traverses a tree using in-order traversal.
+
+* **8. Post-order traversal**
+  * [8-binary_tree_postorder.c]
+
+* **9. Height**
+  * [9-binary_tree_height.c]
+
+## Authors
+<details>
+    <summary>Michael Kiruti</summary>
+    <ul>
+    <li><a href="https://www.github.com/Kiruti01">Github</a></li>
+    <li><a href="https://www.twitter.com/the_lordmikey">Twitter</a></li>
+    <li><a href="mailto:mikekirutic@gmail.com">e-mail</a></li>
+    </ul>
+</details>
+<details>
+    <summary>Brian Kyalo</summary>
+    <ul>
+    <li><a href="https://www.github.com/kyalo3">Github</a></li>
+    </ul>
+</details>
