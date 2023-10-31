@@ -116,7 +116,8 @@ Function Prototypes
   the size of a binary tree.
 
 * **12. Leaves**
-  * [12-binary_tree_leaves.c]
+  * [12-binary_tree_leaves.c](./12-binary_tree_leaves.c): C function that returns
+  the number of leaves in a binary tree.
 
 * **13. Nodes**
   * [13-binary_tree_nodes.c](./13-binary_tree_nodes.c): C function that returns
