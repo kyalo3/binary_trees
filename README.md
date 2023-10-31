@@ -146,7 +146,8 @@ Function Prototypes
   the number of nodes in a binary tree with at least one child.
 
 * **14. Balance factor**
-  * [14-binary_tree_balance.c]
+  * [14-binary_tree_balance.c](./14-binary_tree_balance.c): C function that
+  returns the balance factor of a binary tree.
 
 * **15. Is full**
   * [15-binary_tree_is_full.c](./15-binary_tree_is_full.c): C function that
