@@ -100,14 +100,16 @@ Function Prototypes
   traverses a tree using in-order traversal.
 
 * **8. Post-order traversal**
-  * [8-binary_tree_postorder.c]
+  * [8-binary_tree_postorder.c](./8-binary_tree_postorder.c): C function that
+  traverses a tree using post-order traversal.
 
 * **9. Height**
   * [9-binary_tree_height.c](./9-binary_tree_height.c): C function that returns
   the height of a binary tree.
 
 * **10. Depth**
-  * [10-binary_tree_depth.c]
+  * [10-binary_tree_depth.c](./10-binary_tree_depth.c): C function that returns
+  the depth of a given node in a binary tree.
 
 * **11. Size**
   * [11-binary_tree_size.c](./11-binary_tree_size.c): C function that returns
@@ -124,7 +126,9 @@ Function Prototypes
   * [14-binary_tree_balance.c]
 
 * **15. Is full**
-  * [15-binary_tree_is_full.c]
+  * [15-binary_tree_is_full.c](./15-binary_tree_is_full.c): C function that
+  checks if a binary tree is full.
+  * Returns `1` if a tree is full, `0` otherwise.
 
 * **16. Is perfect**
   * [16-binary_tree_is_perfect.c]
