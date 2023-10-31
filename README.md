@@ -44,8 +44,17 @@ Function Prototypes
 | `6-binary_tree_preorder.c`       | `void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));`                       |
 | `7-binary_tree_inorder.c`        | `void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));`                        |
 | `8-binary_tree_postorder.c`      | `void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));`                      |
-| `9-binary_tree_height.c`         | `size_t binary_tree_height(const binary_tree_t *tree);`  
-
+| `9-binary_tree_height.c`         | `size_t binary_tree_height(const binary_tree_t *tree);`
+  
+| `10-binary_tree_depth.c`         | `size_t binary_tree_depth(const binary_tree_t *tree);`                                           |
+| `11-binary_tree_size.c`          | `size_t binary_tree_size(const binary_tree_t *tree);`                                            |
+| `12-binary_tree_leaves.c`        | `size_t binary_tree_leaves(const binary_tree_t *tree);`                                          |
+| `13-binary_tree_nodes.c`         | `size_t binary_tree_nodes(const binary_tree_t *tree);`                                           |
+| `14-binary_tree_balance.c`       | `int binary_tree_balance(const binary_tree_t *tree);`                                            |
+| `15-binary_tree_is_full.c`       | `int binary_tree_is_full(const binary_tree_t *tree);`                                            |
+| `16-binary_tree_is_perfect.c`    | `int binary_tree_is_perfect(const binary_tree_t *tree);`                                         |
+| `17-binary_tree_sibling.c`       | `binary_tree_t *binary_tree_sibling(binary_tree_t *node);`                                       |
+| `18-binary_tree_uncle.c`         | `binary_tree_t *binary_tree_uncle(binary_tree_t *node);`                                         |
 
 ## Tasks :page_with_curl:
 
@@ -73,7 +82,9 @@ Function Prototypes
   an entire binary tree.
 
 * **4. Is leaf**
-  * [4-binary_tree_is_leaf.c]
+  * [4-binary_tree_is_leaf.c](./4-binary_tree_is_leaf.c): C function that checks
+  if a given node is a leaf.
+  * Returns `1` if the node is a leaf, `0` otherwise.
 
 * **5. Is root**
   * [5-binary_tree_is_root.c](./5-binary_tree_is_root.c): C function that checks
@@ -81,7 +92,8 @@ Function Prototypes
   * Returns `1` if the node is a root, `0` otherwise.
 
 * **6. Pre-order traversal**
-  * [6-binary_tree_preorder.c]
+  * [6-binary_tree_preorder.c](./6-binary_tree_preorder.c): C function that
+  traverses a tree using pre-order traversal.
 
 * **7. In-order traversal**
   * [7-binary_tree_inorder.c](./7-binary_tree_inorder.c): C function that
@@ -94,6 +106,33 @@ Function Prototypes
   * [9-binary_tree_height.c](./9-binary_tree_height.c): C function that returns
   the height of a binary tree.
 
+* **10. Depth**
+  * [10-binary_tree_depth.c]
+
+* **11. Size**
+  * [11-binary_tree_size.c](./11-binary_tree_size.c): C function that returns
+  the size of a binary tree.
+
+* **12. Leaves**
+  * [12-binary_tree_leaves.c]
+
+* **13. Nodes**
+  * [13-binary_tree_nodes.c]
+
+* **14. Balance factor**
+  * [14-binary_tree_balance.c]
+
+* **15. Is full**
+  * [15-binary_tree_is_full.c]
+
+* **16. Is perfect**
+  * [16-binary_tree_is_perfect.c]
+
+* **17. Sibling**
+  * [17-binary_tree_sibling.c]
+
+* **18. Uncle**
+  * [18-binary_tree_uncle.c]
 
 ## Authors
 <details>
