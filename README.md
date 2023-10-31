@@ -4,6 +4,28 @@ C
 Group project
 Algorithm
 
+## Test files
+
+[0-main.c](./0-main.c)
+[1-main.c](./1-main.c)
+[2-main.c](./2-main.c)
+[3-main.c](./3-main.c)
+[4-main.c](./4-main.c)
+[5-main.c](./5-main.c)
+[6-main.c](./6-main.c)
+[7-main.c](./7-main.c)
+[8-main.c](./8-main.c)
+[9-main.c](./9-main.c)
+[10-main.c](./10-main.c)
+[11-main.c](./11-main.c)
+[12-main.c](./12-main.c)
+[13-main.c](./13-main.c)
+[14-main.c](./14-main.c)
+[15-main.c](./15-main.c)
+[16-main.c](./16-main.c)
+[17-main.c](./17-main.c)
+[18-main.c](./18-main.c)
+
 ## Helper File :radioactive:
 
 * [binary_tree_print.c](./binary_tree_print.c): C function that prints binary
