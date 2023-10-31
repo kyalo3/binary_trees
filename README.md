@@ -91,7 +91,8 @@ Function Prototypes
   * [8-binary_tree_postorder.c]
 
 * **9. Height**
-  * [9-binary_tree_height.c]
+  * [9-binary_tree_height.c](./9-binary_tree_height.c): C function that returns
+  the height of a binary tree.
 
 ## Authors
 <details>
