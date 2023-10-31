@@ -44,8 +44,7 @@ Function Prototypes
 | `6-binary_tree_preorder.c`       | `void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));`                       |
 | `7-binary_tree_inorder.c`        | `void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));`                        |
 | `8-binary_tree_postorder.c`      | `void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));`                      |
-| `9-binary_tree_height.c`         | `size_t binary_tree_height(const binary_tree_t *tree);`
-  
+| `9-binary_tree_height.c`         | `size_t binary_tree_height(const binary_tree_t *tree);`                                          | 
 | `10-binary_tree_depth.c`         | `size_t binary_tree_depth(const binary_tree_t *tree);`                                           |
 | `11-binary_tree_size.c`          | `size_t binary_tree_size(const binary_tree_t *tree);`                                            |
 | `12-binary_tree_leaves.c`        | `size_t binary_tree_leaves(const binary_tree_t *tree);`                                          |
