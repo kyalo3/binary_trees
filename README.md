@@ -157,7 +157,9 @@ Function Prototypes
   * [16-binary_tree_is_perfect.c]
 
 * **17. Sibling**
-  * [17-binary_tree_sibling.c]
+  * [17-binary_tree_sibling.c](./17-binary_tree_sibling.c): C function that
+  returns a pointer to the sibling of a given node in a binary tree.
+  * Returns `NULL` if no sibling is found.
 
 * **18. Uncle**
   * [18-binary_tree_uncle.c]
