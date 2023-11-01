@@ -1,51 +1,77 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_height - Measures the height of a binary tree
- * @tree: A pointer to the root node of the tree to measure the height
- * Return: Height of the tree
+ * binary_tree_is_perfect - find if the binary tree is perfect
+ * @tree: the root node
+ *
+ * Return: 1 if perfect else 0
  */
-size_t binary_tree_height(const binary_tree_t *tree)
-{
-	if (tree)
-	{
-		size_t l = 0, r = 0;
 
-		l = tree->left ? 1 + binary_tree_height(tree->left) : 0;
-		r = tree->right ? 1 + binary_tree_height(tree->right) : 0;
-		return ((l > r) ? l : r);
-	}
-	return (0);
-}
-
-/**
- * binary_tree_size - Measures the size of a binary tree
- * @tree: A pointer to the root node of the tree
- * Return: Size of the tree
- */
-size_t binary_tree_size(const binary_tree_t *tree)
-{
-	if (tree)
-	{
-		return (1 + binary_tree_size(tree->left) + binary_tree_size(tree->right));
-	}
-	return (0);
-}
-
-/**
- * binary_tree_is_perfect - Checks if a binary tree is perfect
- * @tree: A pointer to the root node of the tree to check
- * Return: 1 if the tree is perfect, 0 otherwise
- */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
-    if (tree == NULL)
-        return 0;
+	int height = 0;
+	int nodes = 0;
+	int power = 0;
 
-    size_t height = binary_tree_height(tree);
-    size_t size = binary_tree_size(tree);
+	if (tree == NULL)
+		return (0);
+	height = (int)binary_tree_height(tree);
+	nodes = (int)binary_tree_size(tree);
 
-    size_t max_nodes = (1 << (height + 1)) - 1;
+	power = (1 << (height + 1)) - 1;
+	return (power == nodes);
+}
+/**
+ * _power - a function that returns the power of two numbers
+ * @x: the first argument
+ * @y: the second argument
+ *
+ * Return: the power of two numbers
+ */
 
-    return (size == max_nodes);
+int _power(int x, int y)
+{
+	if (y < 0)
+		return (-1);
+	if (y == 0)
+		return (1);
+	else
+		return (x * (_power(x, y - 1)));
+}
+
+/**
+ * binary_tree_size - a function that returns the size of the binary tree
+ * @tree: the root node
+ *
+ * Return: the size of the binary tree
+ */
+
+size_t binary_tree_size(const binary_tree_t *tree)
+{
+	if (tree == NULL)
+		return (0);
+	return (binary_tree_size(tree->left) + binary_tree_size(tree->right) + 1);
+}
+
+/**
+ * binary_tree_height - a function that returns the height of a binary tree
+ * @tree: the root node
+ *
+ * Return: the height of the binary tree
+ */
+
+size_t binary_tree_height(const binary_tree_t *tree)
+{
+	size_t right_height = 0;
+	size_t left_height = 0;
+
+	if (tree == NULL)
+		return (0);
+	if (tree->left)
+		left_height = 1 + binary_tree_height(tree->left);
+	if (tree->right)
+		right_height = 1 + binary_tree_height(tree->right);
+	if (right_height > left_height)
+		return (right_height);
+	return (left_height);
 }
