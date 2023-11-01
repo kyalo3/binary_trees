@@ -1,7 +1,17 @@
 #include "binary_trees.h"
 #include "11-binary_tree_size.c"
 
-#include "binary_trees.h"
+/**
+ * max - Returns the max value (a or b)
+ * @a: value 1
+ * @b: value 2
+ * Return: max value
+ */
+int max(int a, int b)
+{
+	return ((a > b) ? a : b);
+}
+
 
 /**
  * binary_tree_height - Measures the height of a binary tree.
