@@ -25,6 +25,26 @@ Algorithm
 * [16-main.c](./16-main.c)
 * [17-main.c](./17-main.c)
 * [18-main.c](./18-main.c)
+* [100-main.c](./100-main.c)
+* [101-main.c](./101-main.c)
+* [102-main.c](./102-main.c)
+* [103-main.c](./103-main.c)
+* [104-main.c](./104-main.c)
+* [110-main.c](./110-main.c)
+* [111-main.c](./111-main.c)
+* [112-main.c](./112-main.c)
+* [113-main.c](./113-main.c)
+* [114-main.c](./114-main.c)
+* [120-main.c](./120-main.c)
+* [121-main.c](./121-main.c)
+* [122-main.c](./122-main.c)
+* [123-main.c](./123-main.c)
+* [124-main.c](./124-main.c)
+* [130-main.c](./130-main.c)
+* [131-main.c](./131-main.c)
+* [132-main.c](./132-main.c)
+* [133-main.c](./133-main.c)
+* [134-main.c](./134-main.c)
 
 ## Helper File :radioactive:
 
@@ -75,7 +95,22 @@ Function Prototypes
 | `15-binary_tree_is_full.c`       | `int binary_tree_is_full(const binary_tree_t *tree);`                                            |
 | `16-binary_tree_is_perfect.c`    | `int binary_tree_is_perfect(const binary_tree_t *tree);`                                         |
 | `17-binary_tree_sibling.c`       | `binary_tree_t *binary_tree_sibling(binary_tree_t *node);`                                       |
-| `18-binary_tree_uncle.c`         | `binary_tree_t *binary_tree_uncle(binary_tree_t *node);`                        
+| `18-binary_tree_uncle.c`         | `binary_tree_t *binary_tree_uncle(binary_tree_t *node);`
+                 |
+| `100-binary_trees_ancestor.c`    | `binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);` |
+| `101-binary_tree_levelorder.c`   | `void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));`                     |
+| `102-binary_tree_is_complete.c`  | `int binary_tree_is_complete(const binary_tree_t *tree);`                                        |
+| `103-binary_tree_rotate_left.c`  | `binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);`                                   |
+| `104-binary_tree_rotate_right.c` | `binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);`                                  |
+| `110-binary_tree_is_bst.c`       | `int binary_tree_is_bst(const binary_tree_t *tree);`                                             |
+| `111-bst_insert.c`               | `bst_t *bst_insert(bst_t **tree, int value);`                                                    |
+| `112-array_to_bst.c`             | `bst_t *array_to_bst(int *array, size_t size);`                                                  |
+| `113-bst_search.c`               | `bst_t *bst_search(const bst_t *tree, int value);`                                               |
+| `114-bst_remove.c`               | `bst_t *bst_remove(bst_t *root, int value);`                                                     |
+| `120-binary_tree_is_avl.c`       | `int binary_tree_is_avl(const binary_tree_t *tree);`                                             |
+| `121-avl_insert.c`               | `avl_t *avl_insert(avl_t **tree, int value);`                                                    |
+| `122-array_to_avl.c`             | `avl_t *array_to_avl(int *array, size_t size);`                                                  |
+                        
 
 
 ## Tasks :page_with_curl:
@@ -155,7 +190,9 @@ Function Prototypes
   * Returns `1` if a tree is full, `0` otherwise.
 
 * **16. Is perfect**
-  * [16-binary_tree_is_perfect.c]
+  * [16-binary_tree_is_perfect.c](./16-binary_tree_is_perfect.c): C function
+  that checks if a binary tree is perfect.
+  * Returns `1` if a tree is perfect, `0` otherwise.
 
 * **17. Sibling**
   * [17-binary_tree_sibling.c](./17-binary_tree_sibling.c): C function that
@@ -163,7 +200,15 @@ Function Prototypes
   * Returns `NULL` if no sibling is found.
 
 * **18. Uncle**
-  * [18-binary_tree_uncle.c]
+  * [18-binary_tree_uncle.c](./18-binary_tree_uncle.c): C function that
+  returns a pointer to the uncle of a given node in a binary tree.
+  * Returns `NULL` if no uncle is found.
+
+* **19. Lowest common ancestor**
+  * [100-binary_trees_ancestor.c](./100-binary_trees_ancestor.c): C function
+  that returns a pointer to the lowest common ancestor node of two given nodes
+  in a binary tree.
+  * Returns `NULL` if no common ancestor is found.
 
 ## Authors
 <details>
