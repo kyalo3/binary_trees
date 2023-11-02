@@ -86,7 +86,7 @@ Function Prototypes
 | `6-binary_tree_preorder.c`       | `void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));`                       |
 | `7-binary_tree_inorder.c`        | `void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));`                        |
 | `8-binary_tree_postorder.c`      | `void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));`                      |
-| `9-binary_tree_height.c`         | `size_t binary_tree_height(const binary_tree_t *tree);`                                          | 
+| `9-binary_tree_height.c`         | `size_t binary_tree_height(const binary_tree_t *tree);`                                          |
 | `10-binary_tree_depth.c`         | `size_t binary_tree_depth(const binary_tree_t *tree);`                                           |
 | `11-binary_tree_size.c`          | `size_t binary_tree_size(const binary_tree_t *tree);`                                            |
 | `12-binary_tree_leaves.c`        | `size_t binary_tree_leaves(const binary_tree_t *tree);`                                          |
@@ -95,8 +95,7 @@ Function Prototypes
 | `15-binary_tree_is_full.c`       | `int binary_tree_is_full(const binary_tree_t *tree);`                                            |
 | `16-binary_tree_is_perfect.c`    | `int binary_tree_is_perfect(const binary_tree_t *tree);`                                         |
 | `17-binary_tree_sibling.c`       | `binary_tree_t *binary_tree_sibling(binary_tree_t *node);`                                       |
-| `18-binary_tree_uncle.c`         | `binary_tree_t *binary_tree_uncle(binary_tree_t *node);`
-                 |
+| `18-binary_tree_uncle.c`         | `binary_tree_t *binary_tree_uncle(binary_tree_t *node);`                                         |
 | `100-binary_trees_ancestor.c`    | `binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);` |
 | `101-binary_tree_levelorder.c`   | `void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));`                     |
 | `102-binary_tree_is_complete.c`  | `int binary_tree_is_complete(const binary_tree_t *tree);`                                        |
@@ -210,6 +209,32 @@ Function Prototypes
   in a binary tree.
   * Returns `NULL` if no common ancestor is found.
 
+* **20. Level-order traversal**
+  * [101-binary_tree_levelorder.c]
+
+* **21. Is complete**
+  * [102-binary_tree_is_complete.c](./102-binary_tree_is_complete.c): C function
+  that checks if a binary tree is complete.
+  * Returns `1` if the tree is complete, `0` otherwise.
+
+* **22. Rotate left**
+  * [103-binary_tree_rotate_left.c]
+
+* **23. Rotate right**
+  * [104-binary_tree_rotate_right.c](./104-binary_tree_rotate_right.c): C function
+  that performs a right-rotation on a binary tree.
+  * Returns a pointer to the new root node of the tree after rotation.
+
+* **24. Is BST**
+  * [110-binary_tree_is_bst.c]
+
+* **25. BST - Insert**
+  * [111-bst_insert.c](./111-bst_insert.c): C function that inserts a value into
+  a binary search tree.
+  * Returns a pointer to the new node, or `NULL` on failure.
+  * If the tree is `NULL`, the value becomes the root node.
+  * The value is ignored if it is already present in the tree.
+
 ## Authors
 <details>
     <summary>Michael Kiruti</summary>
@@ -223,5 +248,6 @@ Function Prototypes
     <summary>Brian Kyalo</summary>
     <ul>
     <li><a href="https://www.github.com/kyalo3">Github</a></li>
+    <li><a href="mailto:kyalokimeu@gmail.com">e-mail</a></li>
     </ul>
 </details>
