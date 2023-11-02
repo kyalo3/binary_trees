@@ -21,6 +21,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	power = (1 << (height + 1)) - 1;
 	return (power == nodes);
 }
+
 /**
  * _power - a function that returns the power of two numbers
  * @x: the first argument
